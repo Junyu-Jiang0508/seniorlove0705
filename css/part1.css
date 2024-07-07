@@ -1,0 +1,83 @@
+.trend-ana {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 10em;
+}
+
+.fixed-left {
+  flex: 1;
+  z-index: 1;
+  margin-left: 10rem;
+}
+
+.scroll-right {
+  flex: 1;
+}
+
+.fixed-element {
+  position: relative;
+  margin-bottom: 10em;
+}
+
+
+.fixed-element.active {
+  position: fixed;
+  opacity: 1;
+}
+
+.emoji-text,
+.word-text,
+.go-text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  margin-bottom: 70em;
+}
+
+
+.emoji-p,
+.word-p,
+.go-p {
+  font-size: 1.1em;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: rgb(7, 5, 5);
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40em;
+  line-height: 2rem;
+  text-align: justify;
+  box-shadow: 0px 0px 6px 3px #bcbcbc;
+}
+
+.emoji-text {
+  margin-top: 15em;
+}
+
+.wordbox p {
+  font-size: 12px;
+  color: #b2b0b0;
+  text-align: center;
+  margin-top: 3em;
+  width: 100%;
+  line-height: 2;
+  font-family: 'source sans pro';
+}
+
+.top-ph {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .whitebox,
+  .step,
+  .textbox {
+    font-size: 13px;
+    line-height: 1.6em;
+  }
+
+}

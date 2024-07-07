@@ -1,0 +1,490 @@
+@font-face {
+    font-family: 'hanyi55W';
+    src: url('/Fonts/HYRunYuan.TTF') format('truetype')
+}
+
+
+body, .chapter1, .chapter2, .chapter3, .chapter4 {
+    transition: background 0.2s ease;
+}
+body {
+    background: linear-gradient(to bottom, #fff6ed, #fff6ed) !important;
+}
+
+.nav {
+    position: fixed;
+    top: 25%;
+    left: 0;
+    z-index: 999;
+    width: 2px; 
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
+
+.option {
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-default,
+.icon-hover {
+    display: block;
+    width: 50px; 
+    height: 50px;
+    background-size: cover;
+    transition: opacity 0.7s;
+}
+
+
+.icon-hover {
+    opacity: 0; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+.option:hover .icon-default {
+    opacity: 0;
+}
+
+.option:hover .icon-hover {
+    opacity: 1; 
+}
+
+.option i {
+    display: block;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background: #737373;
+    transition: 0.6s;
+    border-width: 2px;
+    border-style: groove;
+    border-color: #ffffff;
+    border-radius: 10%;
+    box-shadow: 0px 0px 3px 2px #e7dddd7f;
+}
+
+
+.text {
+    font-family: 'hanyi55W';
+    position: absolute;
+    height: 50px;
+    width: 210px;
+    background: #737373;
+    top: 0;
+    z-index: -1;
+    left: -250px;
+    color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    line-height: 45px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.option:hover .text {
+    left: 50px;
+}
+
+
+.flourish-embed span {
+    background-color: transparent;
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1% 6%;
+    color: #343434;
+    font-size: 1.05em;
+    line-height: 2em;
+    box-sizing: border-box; 
+}
+
+  
+  section::after, section::before {
+    position: absolute;
+    width: 100%;
+    width: calc(100% - 30px);
+    height: 50px;
+    display: block;
+    z-index: 10;
+  } 
+  
+  section::after {
+    content: "";
+    background: linear-gradient(to top, #fff6ed,  #fff6ed 15%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.0));
+    bottom: 0;
+    left: 0;
+  }
+  
+  section::before {
+    content: "";
+    background: linear-gradient(to bottom, #fff6ed, #fff6ed 5%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0));
+    top: 0;
+    left: 0;
+  }
+  
+  section {
+    box-sizing: border-box;
+    padding: 80px 50px 60px;
+    overflow: auto;
+    text-overflow: hidden;
+    height: 100%;
+  }
+  
+  section > h1 {
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 2.5rem;
+  }
+  
+  section > p {
+    font-family: 'PT Sans', sans-serif;
+    margin: 25px 0;
+  }
+  
+  section > p:first-of-type {
+    margin: 45px 0;
+  }
+  
+  section > p:last-of-type {
+    margin-bottom: 90px;
+  }
+  
+  .hidder {
+    background-color: #16528E;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 22%;
+    width: calc(20vw + 20px);
+    z-index: 100;
+  }
+  
+  .hidder::after,
+  .hidder::before {
+    content: "";
+    display: none;
+  }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 6%;
+        color: #343434;
+        font-size: 0.8em;
+        line-height: 1.5em;
+        box-sizing: border-box; 
+    }
+}
+
+.content p {
+    font-family: 'hanyi55W';
+}
+
+.chart {
+    font-family: 'hanyi55W';
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chart iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+#specific-chart {
+    overflow: hidden; 
+    width: 700px;
+    height: 430px; 
+  }
+  #specific-chart iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+@media screen and (max-width: 600px) {
+    .chart {
+        font-family: 'hanyi55W';
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    .chart iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.note {
+    font-family: 'hanyi55W';
+    font-size: 0.8em;
+    color: #646363;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .note {
+        font-size: 0.5em;
+    }
+}
+
+.chapter1 h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter1 h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter1 h3{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter1 p{
+    margin-bottom: 30px;
+    font-family: 'hanyi55W';
+    color: #6d6d6d;
+}
+
+.chapter1 .content span,
+.chapter1 .top span,
+.chapter1 .step span {
+    font-family: 'hanyi55W';
+    color: #646363;
+    font-weight: bold; /* 添加加粗效果 */
+}
+
+.chapter2 .content span,
+.chapter2 .top span,
+.chapter2 .step span,
+.chapter3 .content span,
+.chapter3 .top span,
+.chapter3 .step span,
+.chapter4 .content span,
+.chapter4 .top span,
+.chapter4 .step span {
+
+    font-weight: bold; /* 添加加粗效果 */
+}
+
+
+.chapter2 h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: '汉仪润圆-55W';
+    color: #646363;
+}
+
+.chapter2 h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter2 h3{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter2 p{
+    margin-bottom: 30px;
+    font-family: 'hanyi55W';
+    color: #6d6d6d;
+}
+
+.chapter3 h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter3 h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter3 h3{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter3 p{
+    margin-bottom: 30px;
+    font-family: 'hanyi55W';
+    color: #6d6d6d;
+}
+
+.chapter4 h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter4 h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter4 h3{
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'hanyi55W';
+    color: #646363;
+}
+
+.chapter4 p{
+    margin-bottom: 30px;
+    font-family: 'hanyi55W';
+    color: #6d6d6d;
+}
+
+.fa-lg {
+    vertical-align: 0% !important;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.box {
+    width: 800px;
+    height: 511px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .box-mobile {
+        display: none;
+    }
+}
+
+.box p {
+    text-align: center;
+}
+
+.people {
+    width: 80%;
+    margin: auto 8% auto 13%;
+}
+
+@media screen and (max-width: 600px) {
+    .nopeople {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .people-mobile {
+        display: none;
+    }
+}
+
+.policy1 {
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.ending {
+    font-family: 'hanyi55W';
+    color: #343434;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.ending p {
+    margin: auto;
+}
+
+.team {
+    text-align: center;
+    color: #343434;
+    line-height: 2em;
+    font-size: 20px;
+}
+
+.photo-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.photo {
+    flex: 1;
+    margin-right: 10px;
+}
+.photo img {
+    width: 100%;
+    box-shadow: none;
+}
+
+.chart-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.charting {
+    flex: 1;
+    margin-right: 10px;
+}
+.chart img {
+    width: 100%;
+    box-shadow: none;
+}
+
+  
